@@ -1,0 +1,29 @@
+ /* Seleccionar el elemento div con class "contenedor" */
+.contenedor {
+    /* Usar grid para crear una cuadrícula de dos columnas y dos filas */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    /* Ajustar el tamaño del contenedor al de la ventana */
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Seleccionar el elemento div con   "panorama" */
+spanorama {
+    /* Ubicar el elemento en la primera celda de la cuadrícula */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+/* Seleccionar el elemento div con  "texto" */
+.texto {
+    /* Ubicar el elemento en la segunda celda de la cuadrícula */
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    /* Usar flexbox para alinear el contenido del elemento */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

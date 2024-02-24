@@ -1,0 +1,116 @@
+<html>
+<head>
+    <!-- Incluir los archivos de Pannellum -->
+    <script type="text/javascript" src="pannellum.js"></script>
+    <link rel="stylesheet" href="pannellum.css"/>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Crear el elemento div que contendrá la imagen panorámica -->
+    <div class="contenedor" id="panorama" style="width: 600px; height: 400px;"></div>
+    <div class="contenedor" id="panorama3" style="width: 600px; height: 400px;"></div>
+    <div class="contenedor" id="panorama4" style="width: 600px; height: 400px;"></div>
+
+    <script>
+        // Inicializar Pannellum con el id del elemento div y las opciones de configuración
+        pannellum.viewer('panorama', {
+            "type": "equirectangular", // Tipo de imagen panorámica
+            "panorama":"./Panorama2_000.png" , // Fuente de la imagen panorámica
+            "autoLoad": true, // Cargar la imagen automáticamente
+            "autoRotate": 10, // Rotar la imagen automáticamente
+            "hfov": 120, // Campo de visión horizontal
+            "pitch": 10, // Ángulo de inclinación
+            "yaw": 180, // Ángulo de giro
+            "minHfov": 50, // Campo de visión horizontal mínimo
+            "maxHfov": 120, // Campo de visión horizontal máximo
+            "minPitch": -40, // Ángulo de inclinación mínimo
+            "maxPitch": 40, // Ángulo de inclinación máximo
+            "minYaw": -180, // Ángulo de giro mínimo
+            "maxYaw": 180, // Ángulo de giro máximo
+            "showZoomCtrl": true, // Mostrar el control de zoom
+            "showFullscreenCtrl": true, // Mostrar el control de pantalla completa
+            "keyboardZoom": true, // Permitir el zoom con el teclado
+            "mouseZoom": true, // Permitir el zoom con el mouse
+            "draggable": true, // Permitir el arrastre con el mouse
+            "compass": true, // Mostrar la brújula
+            "hotSpots": [ // Definir los puntos de acceso
+                {
+                    "pitch": 14, // Ángulo de inclinación del punto de acceso
+                    "yaw": 105, // Ángulo de giro del punto de acceso
+                    "type": "info", // Tipo de punto de acceso
+                    "text": "Un punto de interés", // Texto del punto de acceso
+                    "URL": "./Panorama2_000.png" // URL del punto de acceso
+                }
+            ]
+        });
+    </script>
+    <script>
+        // Inicializar Pannellum con el id del elemento div y las opciones de configuración
+        pannellum.viewer('panorama3', {
+            "type": "equirectangular", // Tipo de imagen panorámica
+            "panorama":"./20240208_151241.jpg" , // Fuente de la imagen panorámica
+            "autoLoad": true, // Cargar la imagen automáticamente
+            "autoRotate": -10, // Rotar la imagen automáticamente
+            "hfov": 60, // Campo de visión horizontal
+            "pitch": 0, // Ángulo de inclinación
+            "yaw": 180, // Ángulo de giro
+            "minHfov": 50, // Campo de visión horizontal mínimo
+            "maxHfov": 90, // Campo de visión horizontal máximo
+            "minPitch": -40, // Ángulo de inclinación mínimo
+            "maxPitch": 40, // Ángulo de inclinación máximo
+            "minYaw": -180, // Ángulo de giro mínimo
+            "maxYaw": 180, // Ángulo de giro máximo
+            "showZoomCtrl": true, // Mostrar el control de zoom
+            "showFullscreenCtrl": true, // Mostrar el control de pantalla completa
+            "keyboardZoom": true, // Permitir el zoom con el teclado
+            "mouseZoom": true, // Permitir el zoom con el mouse
+            "draggable": true, // Permitir el arrastre con el mouse
+            "compass": false, // Mostrar la brújula
+            "hotSpots": [ // Definir los puntos de acceso
+                {
+                    "pitch": 20, // Ángulo de inclinación del punto de acceso
+                    "yaw": 105, // Ángulo de giro del punto de acceso
+                    "type": "info", // Tipo de punto de acceso
+                    "text": "Un punto de interés", // Texto del punto de acceso
+                    "URL": "./Panorama2_000.png" // URL del punto de acceso
+                }
+            ]
+        });
+    </script>
+    <script>
+        // Inicializar Pannellum con el id del elemento div y las opciones de configuración
+        pannellum.viewer('panorama4', {
+            "type": "equirectangular", // Tipo de imagen panorámica
+            "panorama":"./20240208_151241.jpg" , // Fuente de la imagen panorámica
+            "autoLoad": true, // Cargar la imagen automáticamente
+            "autoRotate": -10, // Rotar la imagen automáticamente
+            "hfov": 60, // Campo de visión horizontal
+            "pitch": 0, // Ángulo de inclinación
+            "yaw": 180, // Ángulo de giro
+            "minHfov": 50, // Campo de visión horizontal mínimo
+            "maxHfov": 90, // Campo de visión horizontal máximo
+            "minPitch": -40, // Ángulo de inclinación mínimo
+            "maxPitch": 40, // Ángulo de inclinación máximo
+            "minYaw": -180, // Ángulo de giro mínimo
+            "maxYaw": 180, // Ángulo de giro máximo
+            "showZoomCtrl": true, // Mostrar el control de zoom
+            "showFullscreenCtrl": true, // Mostrar el control de pantalla completa
+            "keyboardZoom": true, // Permitir el zoom con el teclado
+            "mouseZoom": true, // Permitir el zoom con el mouse
+            "draggable": true, // Permitir el arrastre con el mouse
+            "compass": false, // Mostrar la brújula
+            "hotSpots": [ // Definir los puntos de acceso
+                {
+                    "pitch": 20, // Ángulo de inclinación del punto de acceso
+                    "yaw": 105, // Ángulo de giro del punto de acceso
+                    "type": "info", // Tipo de punto de acceso
+                    "text": "Un punto de interés", // Texto del punto de acceso
+                    "URL": "./Panorama2_000.png" // URL del punto de acceso
+                }
+            ]
+        });
+    </script>
+
+</body>
+</html>
